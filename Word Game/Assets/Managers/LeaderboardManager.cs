@@ -5,7 +5,7 @@ using LootLocker.Requests;
 
 public class LeaderboardManager : MonoBehaviour
 {
-    
+    /*
     [SerializeField] private ScoreRow[] scoreRows;
     
     void OnEnable()
@@ -42,5 +42,6 @@ public class LeaderboardManager : MonoBehaviour
         });
         yield return new WaitWhile(() => done == false);
     }
+    */
 
 }

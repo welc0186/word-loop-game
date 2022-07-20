@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EnterNameScreen : MonoBehaviour
 {
 
+    /*
     [SerializeField] private Text inputFieldText;
     [SerializeField] private SFXSO newGameSound;
     [SerializeField] private ScreenLoader enterNameScreenLoader;
@@ -26,4 +27,5 @@ public class EnterNameScreen : MonoBehaviour
             inputField.Select();
         }
     }
+    */
 }

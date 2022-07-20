@@ -7,8 +7,7 @@ public class GameManager : MonoBehaviour
 {
     
     public static GameManager Instance;
-    public GameState gameState;
-    private bool firstFrame;
+    [HideInInspector] public GameState gameState;
 
     public class OnStateChangeEventArgs : EventArgs
         {public GameState gameState;}
@@ -17,16 +16,12 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        firstFrame = true;
     }
 
-    void Update()
+    void Start()
     {
-        if (firstFrame)
-        {
-            ChangeState(GameState.NameEntry);
-            firstFrame = false;
-        }
+        Canvas.ForceUpdateCanvases();
+        ChangeState(0);
     }
 
     public void ChangeState(GameState newState)
@@ -35,11 +30,11 @@ public class GameManager : MonoBehaviour
         OnStateChange?.Invoke(this, new OnStateChangeEventArgs {gameState = this.gameState});
     }
 
+    //First enum is initialized at beginning of game
     public enum GameState {
-        NameEntry,
-        MainMenu,
-        Leaderboard,
-        MainGame
+        RoundStart,
+        PhaseOne,
+        PhaseTwo
     }
 
 }

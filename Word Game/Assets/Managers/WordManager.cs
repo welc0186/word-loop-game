@@ -6,7 +6,7 @@ using TMPro;
 
 public class WordManager : MonoBehaviour
 {
-
+    /*
     [SerializeField] private LetterGrid letterGrid;
     [SerializeField] private ArrowSelector arrowSelector;
     [SerializeField] private Timer timer;
@@ -393,4 +393,5 @@ public enum WordManagerState {
     Play,
     Replace,
     End 
+    */
 }

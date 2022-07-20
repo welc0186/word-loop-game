@@ -6,7 +6,7 @@ using LootLocker.Requests;
 
 public class LeaderboardController : MonoBehaviour
 {
-    
+    /*
     public static LeaderboardController Instance;
     public InputField MemberID, PlayerScore;
     public int ID;
@@ -79,5 +79,6 @@ public class LeaderboardController : MonoBehaviour
         });
         yield return new WaitWhile(() => done == false);
     }
+    */
 
 }

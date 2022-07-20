@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/*
 [CustomEditor(typeof(SFXSO))]
 public class SFXSOEditor : Editor
 {
@@ -21,3 +22,4 @@ public class SFXSOEditor : Editor
     }
 
 }
+*/
